@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-surface: #0d1322;
+    --surface-container-lowest: #080e1d;
+    --surface-container-low: #151b2b;
+    --surface-container: #191f2f;
+    --surface-container-high: #242a3a;
+    --surface-container-highest: #2f3445;
+    --surface-bright: #33394a;
+    --outline: #8d90a0;
+    --outline-variant: #434655;
+    --primary: #b4c5ff;
+    --primary-container: #2563eb;
+    --on-primary-container: #eeefff;
+    --secondary: #ffb77d;
+    --secondary-container: #d97707;
+    --on-secondary-container: #432100;
+    --tertiary: #ffb3ad;
+    --tertiary-container: #cf2c30;
+    --on-tertiary-container: #ffecea;
+  }
+
+  body {
+    background-color: #0d1322;
+    color: #dde2f8;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1322;
+}
+::-webkit-scrollbar-thumb {
+  background: #242a3a;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #33394a;
+}
+
+/* Flowing Laser Dash Animation for Graph Connections */
+@keyframes flowDash {
+  0% {
+    stroke-dashoffset: 48;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-flow-dash {
+  animation: flowDash 1.2s linear infinite;
+}
+
+.animate-flow-dash-reverse {
+  animation: flowDash 1.2s linear infinite reverse;
+}
+
+@keyframes pulseHalo {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.15);
+  }
+}
+
+.animate-pulse-halo {
+  animation: pulseHalo 2s ease-in-out infinite;
+}

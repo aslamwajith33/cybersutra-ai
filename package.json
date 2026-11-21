@@ -1,0 +1,10 @@
+{
+  "name": "cybersutra-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CyberSutra AI - Financial Crime Intelligence & Infrastructure Correlation Platform",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "cd frontend && npm run dev"
+  }
+}

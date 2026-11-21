@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+backend/__pycache__/
+backend/*/__pycache__/
+api/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.pytest_cache/
+
+# Databases & local data
+cybersutra.db
+*.sqlite3
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+.npm
+npm-debug.log*
+
+# Vercel
+.vercel/
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Uploads & temporary artifacts
+uploads/*
+!uploads/.gitkeep
+reports/*.pdf
+!reports/.gitkeep
